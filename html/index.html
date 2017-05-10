@@ -1,74 +1,11 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>WEB PROJECT</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <div class="header">
-      <ul type=none>
-        <li><a href="#introduce">Introduce</a></li>
-        <li><a href="#example">Example</a></li>
-        <li><a href="#main">Main</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-    <div class="body">
-      <div class="introduce" id="introduce">
-        <h1>Welcome</h1>
-        <h1>This is where</h1>
-        <h1>You can practice html</h1>
-        <h1>Where you can</h1>
-        <h1>Practice HTML Tag</h1>
-        <h1>S how me your imagination</h1>
-      </div>
-      <div class="example" id="example">
-        <div class="w3-content w3-display-container">
-          <img class="mySlides" src="./example1.jpg">
-          <img class="mySlides" src="./example2.jpg">
-          <img class="mySlides" src="./example3.jpg">
-          <img class="mySlides" src="./example4.jpg">
-          <img class="mySlides" src="./example5.jpg">
-          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-        </div>
-      </div>
-      <div class="main" id="main">
-        <table width="100%" height="500px" border="1" cellspacing="5" cellpadding="5">
-            <tr>
-                <td width="50%" scope="col">&nbsp;</td>
-                <td width="50%" align="left" scope="col">
-                    <input onclick="runCode();" type="button" value="Run Code">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <form>
-                        <strong>Code</strong>
-                        <textarea name="sourceCode" id="sourceCode" rows="8" cols="80">
-<html>
-<head>
-<title>Hello</title>
-</head>
-<body>
-<h1>Hello!</h1>
-<p>Write HTML, CSS or JavaScript code here and click 'Run Code'.</p>
-</body>
-</html>
-                        </textarea>
-                    </form>
-                </td>
-                <td><strong>Output</strong><iframe name="targetCode" id="targetCode"></iframe></td>
-            </tr>
-        </table>
-      </div>
-      <div class="contact" id="contact">
-      </div>
-    </div>
-    <div class="footer">
-
-    </div>
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+    <frameset rows="55px,*" border=0>
+      <frame src="./top.html">
+      <frame src="./body.html" name="contents">
+    </frameset>
 </html>

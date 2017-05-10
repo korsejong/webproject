@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="./style.css">
+<div class="body">
+  <div class="introduce" id="introduce">
+    <h1>Welcome</h1>
+    <h1>This is where</h1>
+    <h1>You can practice html</h1>
+    <h1>Where you can</h1>
+    <h1>Practice HTML Tag</h1>
+    <h1>Show me your imagination</h1>
+  </div>
+  <div class="example" id="example">
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="./example1.jpg">
+      <img class="mySlides" src="./example2.jpg">
+      <img class="mySlides" src="./example3.jpg">
+      <img class="mySlides" src="./example4.jpg">
+      <img class="mySlides" src="./example5.jpg">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </div>
+  <div class="main" id="main">
+    <table width="100%" height="800px" border="1" cellspacing="5" cellpadding="5">
+      <tr>
+        <td colspan="2" height="5%">
+          <input onclick="runCode();" type="button" value="Run Code">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>HTML Code</strong></td>
+        <td><strong>HTML Output</strong></td>
+      </tr>
+      <tr>
+        <td width="50%" padding="0px">
+          <form>
+            <textarea name="sourceCode" id="sourceCode" rows="8" cols="80">
+<html>
+<head>
+<title>Hello</title>
+</head>
+<body>
+<i>Hello!</i>
+<p>Write HTML, CSS or JavaScript code here and click 'Run Code'.</p>
+</body>
+</html>
+            </textarea>
+          </form>
+        </td>
+        <td>
+        <iframe name="targetCode" id="targetCode" width="600px" height="700px"></iframe></td>
+      </tr>
+    </table>
+  </div>
+  <div class="contact" id="contact">
+    <div class="contact-top">
+      <i>&nbsp;&nbsp;SEOUL NATIONAL UNIVERSITY OF SCIENCE AND TECHNOLOGY</i>
+    </div>
+  </div>
+</div>
+<div class="footer">
+</div>
+<script type="text/javascript" src="./script.js"></script>

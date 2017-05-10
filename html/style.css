@@ -45,7 +45,7 @@ a{
 
 .introduce{
   position: absolute;
-  top: 55px;
+  top: 0px;
   left: 0px;
   height: 1000px;
   width: 100%;
@@ -62,7 +62,7 @@ a{
 }
 .example{
   position: absolute;
-  top: 1055px;
+  top: 1000px;
   left: 0px;
   height: 1000px;
   width: 100%;
@@ -72,7 +72,7 @@ a{
 }
 .example img{
   position: relative;
-  top: 100px;
+  top: 30px;
   left: 10%;
   width: 80%;
   height: 600px;
@@ -80,15 +80,19 @@ a{
 
 .main{
   position: absolute;
-  top: 2055px;
+  top: 2000px;
   left: 0px;
   height: 1000px;
   width: 100%;
 }
 
 .main textarea{
-  width:50%;
-  height:100%;
+  width:500px;
+  height:700px;
+}
+
+.main strong{
+  font-size: 30px;
 }
 
 .contact{
@@ -97,12 +101,28 @@ a{
   left: 0px;
   height: 1000px;
   width: 100%;
-  background-color: white;
+  background-color: #505050;
 }
-
+.contact-top{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+  background-color: #101010;
+}
+.contact i,h1{
+  position: relative;
+  top: 20%;
+  font-size: 30px;
+  color: white;
+}
+.contact a{
+  font-size: 30px;
+}
 .w3-display-left {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 10%;
     transform: translate(0%,-50%);
     -ms-transform: translate(-0%,-50%);
@@ -110,7 +130,7 @@ a{
 
 .w3-display-right {
     position: absolute;
-    top: 45%;
+    top: 35%;
     right: 10%;
     transform: translate(0%,-50%);
     -ms-transform: translate(0%,-50%);
