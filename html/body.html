@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="../css/style.css">
 <div class="body">
   <div class="introduce" id="introduce">
     <h1>Welcome</h1>
@@ -9,54 +9,84 @@
     <h1>Show me your imagination</h1>
   </div>
   <div class="example" id="example">
+    <strong>examples</strong>
     <div class="w3-content w3-display-container">
-      <img class="mySlides" src="./example1.jpg">
-      <img class="mySlides" src="./example2.jpg">
-      <img class="mySlides" src="./example3.jpg">
-      <img class="mySlides" src="./example4.jpg">
-      <img class="mySlides" src="./example5.jpg">
+      <img class="mySlides" src="../images/example1.bmp">
+      <img class="mySlides" src="../images/example2.jpg">
+      <img class="mySlides" src="../images/example3.jpg">
+      <img class="mySlides" src="../images/example4.jpg">
+      <img class="mySlides" src="../images/example5.jpg">
       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
       <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
   </div>
   <div class="main" id="main">
-    <table width="100%" height="800px" border="1" cellspacing="5" cellpadding="5">
-      <tr>
-        <td colspan="2" height="5%">
-          <input onclick="runCode();" type="button" value="Run Code">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>HTML Code</strong></td>
-        <td><strong>HTML Output</strong></td>
-      </tr>
-      <tr>
-        <td width="50%" padding="0px">
-          <form>
-            <textarea name="sourceCode" id="sourceCode" rows="8" cols="80">
+    <div class="main_top">
+      <div class="left">
+        <strong>Write the code here</strong>
+        <div class="imagebuttons">
+          <input onclick="runCode();" type="image" src="../icon/run.png" width="50px" height="50px">
+          <input onclick="refreshCode();" type="image" src="../icon/refresh.png" width="50px" height="50px">
+          <input onclick="saveTextAsFile();" type="image" src="../icon/download.png" width="50px" height="50px">
+        </div>
+        <br>
+        <span>or upload file -></span>
+        <input id="inputfile" type="file">
+      </div>
+      <div class="right">
+        <strong>Results appear here</strong>
+      </div>
+    </div>
+    <div class="main_body">
+      <div class="left">
+        <form>
+          <textarea name="sourceCode" id="sourceCode">
 <html>
-<head>
-<title>Hello</title>
-</head>
-<body>
-<i>Hello!</i>
-<p>Write HTML, CSS or JavaScript code here and click 'Run Code'.</p>
-</body>
+  <head>
+    <title>Hello</title>
+  </head>
+  <body>
+    <h1>Hello!</h1>
+    <p>Write HTML, CSS or JavaScript code here and click 'Run Image'.</p>
+  </body>
 </html>
-            </textarea>
-          </form>
-        </td>
-        <td>
-        <iframe name="targetCode" id="targetCode" width="600px" height="700px"></iframe></td>
-      </tr>
-    </table>
+          </textarea>
+        </form>
+      </div>
+      <div class="right">
+        <iframe name="targetCode" id="targetCode"></iframe>
+      </div>
+    </div>
   </div>
   <div class="contact" id="contact">
-    <div class="contact-top">
-      <i>&nbsp;&nbsp;SEOUL NATIONAL UNIVERSITY OF SCIENCE AND TECHNOLOGY</i>
+    <div class="contact_top">
+      <strong>Seoul National University of Science and Technology <br> Computer Engineering</strong>
+    </div>
+    <div class="contact_body">
+      <table border=0>
+        <tr>
+          <th><strong>Se jong Choi</strong></th>
+        </tr>
+        <tr>
+          <td><strong>Phone : 010-9183-0275<br>E-mail : sejong.400@gmail.com</strong></td>
+        </tr>
+      </table>
+      <table border=0>
+        <tr>
+          <th><strong>Je min Song</strong></th>
+        </tr>
+        <tr>
+          <td><strong>Phone : 010-0000-0000<br>E-mail : </strong></td>
+        </tr>
+      </table><table border=0>
+        <tr>
+          <th><strong>Seung hun Hyeon</strong></th>
+        </tr>
+        <tr>
+          <td><strong>Phone : 010-0000-0000<br>E-mail : </strong></td>
+        </tr>
+      </table>
     </div>
   </div>
 </div>
-<div class="footer">
-</div>
-<script type="text/javascript" src="./script.js"></script>
+<script type="text/javascript" src="../javascript/script.js"></script>
