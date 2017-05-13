@@ -40,14 +40,12 @@ a{
   top: 0px;
   left: 13%;
   width: 74%;
-  height: 4000px;
+  height: 100%;
 }
 
 .introduce{
   position: absolute;
-  top: 0px;
   left: 0px;
-  height: 1000px;
   width: 100%;
   background-image:url('../images/backgroundimg.jpeg');
   background-size: 100% 1000px;
@@ -65,9 +63,7 @@ a{
 
 .example{
   position: absolute;
-  top: 1000px;
   left: 0px;
-  height: 1000px;
   width: 100%;
   background-image:url('../images/backgroundimg.jpeg');
   background-size: 100% 1000px;
@@ -92,16 +88,14 @@ a{
 
 .main{
   position: absolute;
-  top: 2000px;
   left: 0px;
-  height: 1000px;
   width: 100%;
   background-color: white;
 }
 
 .main_top{
   margin: 3px;
-  height:8%;
+  height:80px;
 }
 
 .imagebuttons{
@@ -110,7 +104,7 @@ a{
 
 .main_body{
   margin: 3px;
-  height:60%;
+  height:500px;
 }
 
 .main .left{
@@ -142,9 +136,7 @@ a{
 
 .contact{
   position: absolute;
-  top: 3000px;
   left: 0px;
-  height: 1000px;
   width: 100%;
   background-image: url("../images/contactback.jpg");
 }

@@ -79,3 +79,10 @@ var control = document.getElementById("inputfile");
          console.log("Filename: " + control.files[0].name);
          reader.readAsText(control.files[0]);
      }, false);
+
+var divs = ["introduce","example","main","contact"];
+for(var i=0 ; i<4; i++){
+  var divId = document.getElementById(divs[i]);
+  divId.style.height = screen.height - 55 + "px";
+  divId.style.top = (screen.height-55)*i + "px";
+}
