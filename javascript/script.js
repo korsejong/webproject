@@ -1,3 +1,4 @@
+//example image script
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -16,6 +17,7 @@ function showDivs(n) {
     x[slideIndex-1].style.display = "block";
 }
 
+//main function script
 function runCode()
 	{
 		var content = document.getElementById('sourceCode').value;
@@ -47,10 +49,8 @@ function saveTextAsFile() {
   downloadLink.download = fileNameToSaveAs;
   downloadLink.innerHTML = "Download File";
   if (window.webkitURL != null) {
-    // Chrome allows the link to be clicked without actually adding it to the DOM.
     downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
   } else {
-    // Firefox requires the link to be added to the DOM before it can be clicked.
     downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
     downloadLink.onclick = destroyClickedElement;
     downloadLink.style.display = "none";
@@ -61,10 +61,8 @@ function saveTextAsFile() {
 }
 
 function destroyClickedElement(event) {
-  // remove the link from the DOM
   document.body.removeChild(event.target);
 }
-
 
 var control = document.getElementById("inputfile");
      control.addEventListener("change", function(event){
@@ -87,15 +85,16 @@ for(var i=0;i<count;i++){
        if(e.keyCode==9 || e.which==9){
            e.preventDefault();
            var s = this.selectionStart;
-           this.value = this.value.substring(0,this.selectionStart) + "\t" + this.value.substring(this.selectionEnd);
+           this.value = this.value.substring(0,this.selectionStart) + " " + this.value.substring(this.selectionEnd);
            this.selectionEnd = s+1;
        }
    }
 }
 
+//resizing divs
 var divs = ["introduce","example","main","contact"];
 for(var i=0 ; i<4; i++){
   var divId = document.getElementById(divs[i]);
-  divId.style.height = screen.height - 55 + "px";
-  divId.style.top = (screen.height-55)*i + "px";
+  divId.style.height = screen.height - 55;
+  divId.style.top = (screen.height-55)*i;
 }
