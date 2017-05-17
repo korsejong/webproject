@@ -48,7 +48,7 @@ a{
   left: 0px;
   width: 100%;
   background-image:url('../images/backgroundimg.jpeg');
-  background-size: 100% 1000px;
+  background-size: 100% 100%;
   opacity: 0.8;
   text-align: center;
 }
@@ -66,7 +66,7 @@ a{
   left: 0px;
   width: 100%;
   background-image:url('../images/backgroundimg.jpeg');
-  background-size: 100% 1000px;
+  background-size: 100% 100%;
 }
 
 .example strong{
@@ -142,13 +142,8 @@ a{
   position: absolute;
   left: 0px;
   width: 100%;
-  background-image: url("../images/contactback.jpg");
-}
-
-.contact strong{
-  font-family: 'Orbitron', sans-serif;
-  font-size: 30px;
-  color: white;
+  background-image: url("../images/backgroundimg.jpeg");
+  background-size: 100% 100%;
 }
 
 .contact_top{
@@ -157,8 +152,16 @@ a{
   left: 0px;
   height: 100px;
   width: 100%;
-  background-color: #101010;
   text-align: center;
+}
+
+.contact_top strong{
+  position: absolute;
+  right:15%;
+  font-size: 75px;
+  color:#FFFAF0;
+  font-family: 'Raleway';
+  font-weight: bold;
 }
 
 .contact_body{
@@ -167,16 +170,19 @@ a{
   left: 0px;
 }
 
-.contact_body img{
-  float:left;
+.contact_body strong{
+  font-family: 'Raleway';
+  font-size: 30px;
+  color: white;
+  background-color: rgba( 0, 0, 0, 0.5 );
 }
 
 .contact_body table{
   position:relative;
-  left:20%;
+  left:10%;
   top: 50px;
-  width: 60%;
-  height: 200px;
+  width: 80%;
+  height: 150px;
   text-align: left;
 }
 

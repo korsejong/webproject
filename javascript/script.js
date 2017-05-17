@@ -33,7 +33,7 @@ function refreshCode()
 {
   var content = document.getElementById('sourceCode');
   var iframe = document.getElementById('targetCode');
-  content.value = "<html>\n  <head>\n    <title>Hello</title>\n  </head>\n  <body>\n    <h1>Hello!</h1>\n    <p>Write HTML, CSS or JavaScript code here and click 'Run Code'.</p>\n  </body>\n</html>"
+  content.value = "<html>\n  <head>\n    <title>Hello</title>\n  </head>\n  <body>\n    <h1>Hello!</h1>\n    <p>Write HTML, CSS or JavaScript code here and click 'Run Image'.</p>\n  </body>\n</html>"
   iframe = (iframe.contentWindow) ? iframe.contentWindow : (iframe.contentDocument.document) ? iframe.contentDocument.document : iframe.contentDocument;
   iframe.document.open();
   iframe.document.write('');
