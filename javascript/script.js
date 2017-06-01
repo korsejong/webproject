@@ -92,8 +92,8 @@ for(var i=0;i<count;i++){
 }
 
 //resizing divs
-var divs = ["introduce","example","main","contact"];
-for(var i=0 ; i<4; i++){
+var divs = ["team_intro","introduce","example","main","contact"];
+for(var i=0 ; i<5; i++){
   var divId = document.getElementById(divs[i]);
   divId.style.height = screen.height - 55;
   divId.style.top = (screen.height-55)*i;

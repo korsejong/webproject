@@ -43,19 +43,73 @@ a{
   height: 100%;
 }
 
+.team_intro{
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  background-image: url("../images/backgroundimg.jpeg");
+  background-size: 100% 100%;
+}
+
+.intro_top{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.intro_top strong{
+  position: absolute;
+  right:15%;
+  font-size: 75px;
+  color:#FFFAF0;
+  font-family: 'Raleway';
+  font-weight: bold;
+}
+
+.intro_body{
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.intro_body strong{
+  font-family: 'Raleway';
+  font-size: 50px;
+  color: #FFFAF0;
+  background-color: rgba( 0, 0, 0, 0.5 );
+}
+
+.intro_body table{
+  position:relative;
+  left:10%;
+  top: 50px;
+  width: 80%;
+  height: 150px;
+  text-align: left;
+}
+
+.intro_body td strong{
+  font-family: 'Raleway';
+  font-size: 30px;
+  color: white;
+  background-color: rgba( 0, 0, 0, 0.5 );
+}
+
 .introduce{
   position: absolute;
   left: 0px;
   width: 100%;
   background-image:url('../images/backgroundimg.jpeg');
   background-size: 100% 100%;
-  opacity: 0.8;
   text-align: center;
 }
 
 .introduce h1{
   position: relative;
-  top: 100px;
+  top: 50px;
   color: white;
   font-family: 'Raleway';
   font-size: 50px;
